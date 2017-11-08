@@ -14,9 +14,9 @@
         <div class="row">
             <div class="col-lg-12 text-right irs-bb-right">
                 <ul class="list-inline irs-brdcrmb">
-                    <li><a href="#!/">Home</a></li>
+                    <li><a ng-href="#!/">Home</a></li>
                     <li><a> > </a></li>
-                    <li><a href="#!/courses">Courses</a></li>
+                    <li><a ng-href="#!/courses">Courses</a></li>
                     <li><a> > </a></li>
                     <li><a class="active">Course Details</a></li>
                 </ul>
@@ -31,18 +31,18 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="irs-courses-details-title">
-                            <h2 ng-bind="title"></h2>
+                            <h2 ng-bind="course.Name"></h2>
                             <ul class="list-inline irs-cl-teacher-info">
-                                <li class="irs-cl-thumb"><img src="images/courses/s3.png" alt="s3.png"></li>
-                                <li class="irs-cl-info">with <span class="text-thm2" ng-bind="lecture"></span></li>
+                                <li class="irs-cl-thumb"><img ng-src="images/courses/{{course.AutherImage}}" alt="{{course.AutherImage}}"></li>
+                                <li class="irs-cl-info">with <span class="text-thm2" ng-bind="course.Auther"></span></li>
                                 <li> <span class="text-thm2 flaticon-social-2"></span> 0</li>
                                 <li> <span class="text-thm2 flaticon-interface-1"></span> 0</li>
                                 <!--<li class="pull-right"> <a href="#" class="btn btn-default irs-button-styledark"> Take This Course</a></li>-->
                             </ul>
                         </div>
                         <div class="irs-courses-details-thumb">
-                            <img class="img-responsive img-fluid" src="images/courses/{{image}}" alt="cd1.jpg">
-                            <div class="irs-cdtls-price"><p ng-bind="price"></p></div>
+                            <img class="img-responsive img-fluid" ng-src="images/courses/{{course.Image3}}" alt="{{course.Image3}}">
+                            <div ng-show="course.Price > 0" class="irs-cdtls-price"><p ng-bind="course.Price"></p></div>
                         </div>
                     </div>
                 </div>
@@ -66,10 +66,10 @@
                                                 <div class="irs-cdtls-feture-bot">
                                                     <ul class="list-group">
                                                         <li>
-                                                            <a class="list-group-item"><span class="flaticon-business text-thm2"></span> Lecture <span class="pull-right"> 2 </span></a>
+                                                            <a class="list-group-item"><span class="flaticon-business text-thm2"></span> Lecture <span class="pull-right" ng-bind="course.Lecture"></span></a>
                                                         </li>
                                                         <li>
-                                                            <a class="list-group-item"><span class="flaticon-clock-1 text-thm2"></span> Duration <span class="pull-right"> 2 hrs. </span></a>
+                                                            <a class="list-group-item"><span class="flaticon-clock-1 text-thm2"></span> Duration <span class="pull-right" ng-bind="course.Duration"></span></a>
                                                         </li>
                                                         <li>
                                                             <a class="list-group-item"><span class="flaticon-pen text-thm2"></span> Quizzes <span class="pull-right"> 3 </span></a>
@@ -78,7 +78,7 @@
                                                             <a class="list-group-item"><span class="flaticon-arrows-4 text-thm2"></span> Skill Level <span class="pull-right"> All </span></a>
                                                         </li>
                                                         <li>
-                                                            <a class="list-group-item"><span class="flaticon-people-1 text-thm2"></span> Students <span class="pull-right"> 10 </span></a>
+                                                            <a class="list-group-item"><span class="flaticon-people-1 text-thm2"></span> Students <span class="pull-right" ng-bind="course.Students"></span></a>
                                                         </li>
                                                         <li>
                                                             <a class="list-group-item"><span class="flaticon-globe text-thm2"></span> Language <span class="pull-right"> English </span></a>
@@ -91,7 +91,7 @@
                                             </div>
                                             <div class="col-md-7">
                                                 <div class="irs-courses-dtls-second-para">
-                                                    <div ng-bind-html="descrip"></div>
+                                                    <div ng-bind-html="course.HtmlContent"></div>
                                                     <!--<p>In your study of Linguistics, you will be introduced to the analysis of the nature and structure of human language (including topics such as how words and sentences are formed.</p>
                                                     <p class="irs-mrgntp-thrty">In your study of Linguistics, you will be introduced to the analysis of the nature and structure of human language (including topics such as how words and sentences are formed.</p>
                                                     <ul class="list-unstyled irs-cdtls-spara">
@@ -165,13 +165,8 @@
                 <div class="irs-sb-courses">
                     <h3 class="irs-sblc-title text-center">Courses</h3>
                     <ul class="list-unstyled irs-sbc-list">
-                        <li class="active"><a href="#!/course"><span class="flaticon-arrows-3"></span> All Courses</a></li>
-                        <li><a href="#!/courseDetail/1"><span class="flaticon-arrows-3"></span> AppSense Inc</a></li>
-                        <li><a href="#!/courseDetail/2"><span class="flaticon-arrows-3"></span> XenDesktop</a></li>
-                        <li><a href="#!/courseDetail/3"><span class="flaticon-arrows-3"></span> Amazon Web Services</a></li>
-                        <li><a href="#!/courseDetail/4"><span class="flaticon-arrows-3"></span> VMware</a></li>
-                        <li><a href="#!/courseDetail/5"><span class="flaticon-arrows-3"></span> Citrix XenApp</a></li>
-                        <li><a href="#!/courseDetail/6"><span class="flaticon-arrows-3"></span> NetScaler - Citrix</a></li>
+                        <li class="active"><a ng-href="#!/courses"><span class="flaticon-arrows-3"></span> All Courses</a></li>
+                        <li ng-repeat="cour in courses"><a ng-href="{{cour.Url1}}"><span class="flaticon-arrows-3"></span>{{cour.Name}}</a></li>
                     </ul>
                 </div>
                 <!--<div class="irs-sb-lcourses">

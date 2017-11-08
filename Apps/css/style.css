@@ -722,7 +722,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
 }
 
 .irs-commtmnt-column {
-    margin-bottom: 70px;
+    /*margin-bottom: 70px;*/
     position: relative;
 }
 
@@ -733,13 +733,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
         height: 364px;
         position: absolute;
         right: -15px;
-        top: -44%;
+        top: -20%;
         width: 1px;
     }
 
     .irs-commtmnt-column.style_one::before {
         background-color: #dedede;
-        bottom: -54%;
+        bottom: -14%;
         content: "";
         height: 1px;
         left: 10px;

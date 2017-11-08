@@ -13,7 +13,7 @@
                             <div class="irs-text-three animated fadeInnUp delay-500">
                                 <p>See opportunities from employers seeking our students and alumni.</p>
                             </div>
-                            <a href="#!/courses" class="btn btn-lg irs-btn-thm irs-home-btn animated fadeInUp delay-750"> <span> Register Today</span> </a> <a href="#!/courses" class="btn btn-lg irs-btn-thm2 irs-home-btn animated fadeInUp delay-1000"> <span> Check Courses</span> </a>
+                            <a ng-href="#!/courses" class="btn btn-lg irs-btn-thm irs-home-btn animated fadeInUp delay-750"> <span> Register Today</span> </a> <a ng-href="#!/courses" class="btn btn-lg irs-btn-thm2 irs-home-btn animated fadeInUp delay-1000"> <span> Check Courses</span> </a>
                         </div>
                         <img class="img-responsive" src="images/home/h4.jpg" alt="h4.jpg">
                     </div>
@@ -26,7 +26,7 @@
                             <div class="irs-text-three animated fadeInUp delay-1500">
                                 <p>Learning Resources Centre, a student social space.</p>
                             </div>
-                            <a href="#!/courses" class="btn btn-lg irs-btn-thm irs-home-btn animated fadeInUp delay-1750"> <span> Check Courses</span> </a>
+                            <a ng-href="#!/courses" class="btn btn-lg irs-btn-thm irs-home-btn animated fadeInUp delay-1750"> <span> Check Courses</span> </a>
                         </div>
                         <img class="img-responsive" src="images/home/h5.jpg" alt="h5.jpg">
                     </div>
@@ -39,7 +39,7 @@
                             <div class="irs-text-three animated fadeInUp delay-2250">
                                 <p>Top rated for combining academic quality and outdoor reacreation.</p>
                             </div>
-                            <a href="#!/courses" class="btn btn-lg irs-btn-thm irs-home-btn animated fadeInUp delay-2250"> <span> Register Today</span> </a> <a href="#!/courses" class="btn btn-lg irs-btn-thm irs-home-btn animated fadeInUp delay-2750"> <span> Check Courses</span> </a>
+                            <a ng-href="#!/courses" class="btn btn-lg irs-btn-thm irs-home-btn animated fadeInUp delay-2250"> <span> Register Today</span> </a> <a ng-href="#!/courses" class="btn btn-lg irs-btn-thm irs-home-btn animated fadeInUp delay-2750"> <span> Check Courses</span> </a>
                         </div>
                         <img class="img-responsive" src="images/home/h6.jpg" alt="h6.jpg">
                     </div>
@@ -84,7 +84,9 @@
                         <div class="irs-cmmt-icon"><span class="flaticon-clothes"></span></div>
                         <div class="irs-cmmt-details">
                             <h3>Hands-on instruction.</h3>
-                            <p>some content.</p>
+                            <p>
+                                hands-on activities rekindle a love of learning and connect abstract concepts to the real world -- while achieving desired educational outcomes.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -134,159 +136,36 @@
                 <p class="irs-lc-tpara">iNet Solutions offers lots of courses, of all types. Take a moment and see our latest ones:</p>
             </div>
             <div class="col-lg-6 irs-pad-zero style2 irs-all-courses text-right">
-                <a href="#!/courses" class="btn btn-sm irs-btn-thm"><span> See All Courses</span></a>
+                <a ng-href="#!/courses" class="btn btn-sm irs-btn-thm"><span> See All Courses</span></a>
             </div>
         </div>
         <div class="row irs-mrgnt">
             <div class="col-lg-12 irs-pad-zero">
                 <div class="irs-lc-carousel">
-                    <div class="item animatedParent">
+                    <div class="item animatedParent" ng-repeat="course in courses">
                         <div class="irs-lc-grid text-center">
                             <div class="irs-lc-grid-thumb">
-                                <img class="img-responsive img-fluid" src="images/courses/appsense-logo.png" alt="appsense">
+                                <img class="img-responsive img-fluid" ng-src="images/courses/{{course.Image1}}" alt="{{course.Image1}}">
                                 <div class="irs-lc-overlay"></div>
-                                <!--<div class="irs-lc-price">1000</div>-->
+                                <div ng-show="course.Price > 0" class="irs-lc-price" ng-bind="course.Price"></div>
                             </div>
                             <div class="irs-lc-details">
                                 <div class="irs-lc-teacher-info">
-                                    <div class="irs-lct-thumb"><img src="images/courses/s3.png" alt="s3.png"></div>
-                                    <div class="irs-lct-info">with <span class="text-thm2"> Bala</span></div>
+                                    <div class="irs-lct-thumb"><img ng-src="images/courses/{{course.AutherImage}}" alt="{{course.AutherImage}}"></div>
+                                    <div class="irs-lct-info">with <span class="text-thm2" ng-bind="course.Auther"></span></div>
                                 </div>
-                                <h4><a href="#!/courseDetail/1">AppSense Inc is a privately held company providing user virtualization technology. </a></h4>
+                                <h4><a ng-href="{{course.Url1}}"><span ng-bind="course.Description"></span></a></h4>
                             </div>
-                            <div class="irs-lc-footer">
+                            <div class="irs-lc-footer" ng-click="navigate(course.Url1)">
                                 <div class="irs-lc-normal-part">
                                     <ul class="list-inline">
                                         <li><a><i class="fa fa-users"></i> 0</a></li>
                                         <li><a><i class="fa fa-commenting"></i> 0</a></li>
                                     </ul>
                                 </div>
-                                <div class="irs-lc-hover-part">See Course</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item animatedParent">
-                        <div class="irs-lc-grid text-center">
-                            <div class="irs-lc-grid-thumb">
-                                <img class="img-responsive img-fluid" src="images/courses/6.jpg" alt="6.jpg">
-                                <div class="irs-lc-overlay"></div>
-                                <!--<div class="irs-lc-price">1000</div>-->
-                            </div>
-                            <div class="irs-lc-details style2">
-                                <div class="irs-lc-teacher-info">
-                                    <div class="irs-lct-thumb"><img src="images/courses/s3.png" alt="s3.png"></div>
-                                    <div class="irs-lct-info">with <span class="text-thm2"> Bala</span></div>
+                                <div class="irs-lc-hover-part">
+                                    See Course
                                 </div>
-                                <h4 class="irs-extraspce"><a href="#!/courseDetail/2">Deliver secure virtual apps and desktops. ... Deliver Windows, Linux, web and SaaS applications</a></h4>
-                            </div>
-                            <div class="irs-lc-footer">
-                                <div class="irs-lc-normal-part">
-                                    <ul class="list-inline">
-                                        <li><a><i class="fa fa-users"></i> 0</a></li>
-                                        <li><a><i class="fa fa-commenting"></i> 0</a></li>
-                                    </ul>
-                                </div>
-                                <div class="irs-lc-hover-part">See Course</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item animatedParent">
-                        <div class="irs-lc-grid text-center">
-                            <div class="irs-lc-grid-thumb">
-                                <img class="img-responsive img-fluid" src="images/courses/7.jpg" alt="7.jpg">
-                                <div class="irs-lc-overlay"></div>
-                                <!--<div class="irs-lc-price">1000</div>-->
-                            </div>
-                            <div class="irs-lc-details">
-                                <div class="irs-lc-teacher-info">
-                                    <div class="irs-lct-thumb"><img src="images/courses/s3.png" alt="s3.png"></div>
-                                    <div class="irs-lct-info">with <span class="text-thm2"> Bala</span></div>
-                                </div>
-                                <h4 class="irs-extraspce"><a href="#!/courseDetail/3">Amazon Web Services is a subsidiary of Amazon.com that provides on-demand cloud computing platforms to individuals</a></h4>
-                            </div>
-                            <div class="irs-lc-footer">
-                                <div class="irs-lc-normal-part">
-                                    <ul class="list-inline">
-                                        <li><a><i class="fa fa-users"></i> 0</a></li>
-                                        <li><a><i class="fa fa-commenting"></i> 0</a></li>
-                                    </ul>
-                                </div>
-                                <div class="irs-lc-hover-part">See Course</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item animatedParent">
-                        <div class="irs-lc-grid text-center">
-                            <div class="irs-lc-grid-thumb">
-                                <img class="img-responsive img-fluid" src="images/courses/8.jpg" alt="8.jpg">
-                                <div class="irs-lc-overlay"></div>
-                                <!--<div class="irs-lc-price">1000</div>-->
-                            </div>
-                            <div class="irs-lc-details style2">
-                                <div class="irs-lc-teacher-info">
-                                    <div class="irs-lct-thumb"><img src="images/courses/s3.png" alt="s3.png"></div>
-                                    <div class="irs-lct-info">with <span class="text-thm2"> Bala</span></div>
-                                </div>
-                                <h4><a href="#!/courseDetail/4">VMware, Inc. is a subsidiary of Dell Technologies that provides cloud computing and platform virtualization software and services</a></h4>
-                            </div>
-                            <div class="irs-lc-footer">
-                                <div class="irs-lc-normal-part">
-                                    <ul class="list-inline">
-                                        <li><a><i class="fa fa-users"></i> 210</a></li>
-                                        <li><a><i class="fa fa-commenting"></i> 10</a></li>
-                                    </ul>
-                                </div>
-                                <div class="irs-lc-hover-part">See Course</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item animatedParent">
-                        <div class="irs-lc-grid text-center">
-                            <div class="irs-lc-grid-thumb">
-                                <img class="img-responsive img-fluid" src="images/courses/5.jpg" alt="5.jpg">
-                                <div class="irs-lc-overlay"></div>
-                                <!--<div class="irs-lc-price">1000</div>-->
-                            </div>
-                            <div class="irs-lc-details style2">
-                                <div class="irs-lc-teacher-info">
-                                    <div class="irs-lct-thumb"><img src="images/courses/s3.png" alt="s3.png"></div>
-                                    <div class="irs-lct-info">with <span class="text-thm2"> Bala</span></div>
-                                </div>
-                                <h4><a href="#!/courseDetail/5">Deliver secure virtual apps and desktops. With a Citrix Cloud management infrastructure</a></h4>
-                            </div>
-                            <div class="irs-lc-footer">
-                                <div class="irs-lc-normal-part">
-                                    <ul class="list-inline">
-                                        <li><a><i class="fa fa-users"></i> 0</a></li>
-                                        <li><a><i class="fa fa-commenting"></i> 0</a></li>
-                                    </ul>
-                                </div>
-                                <div class="irs-lc-hover-part">See Course</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item animatedParent">
-                        <div class="irs-lc-grid text-center">
-                            <div class="irs-lc-grid-thumb">
-                                <img class="img-responsive img-fluid" src="images/courses/9.jpg" alt="9.jpg">
-                                <div class="irs-lc-overlay"></div>
-                                <!--<div class="irs-lc-price">1000</div>-->
-                            </div>
-                            <div class="irs-lc-details">
-                                <div class="irs-lc-teacher-info">
-                                    <div class="irs-lct-thumb"><img src="images/courses/s3.png" alt="s3.png"></div>
-                                    <div class="irs-lct-info">with <span class="text-thm2"> Bala</span></div>
-                                </div>
-                                <h4><a href="#!/courseDetail/6">Ensure application uptime and flawless performance with NetScaler ADC. ...</a></h4>
-                            </div>
-                            <div class="irs-lc-footer">
-                                <div class="irs-lc-normal-part">
-                                    <ul class="list-inline">
-                                        <li><a><i class="fa fa-users"></i> 0</a></li>
-                                        <li><a><i class="fa fa-commenting"></i> 0</a></li>
-                                    </ul>
-                                </div>
-                                <div class="irs-lc-hover-part">See Course</div>
                             </div>
                         </div>
                     </div>
