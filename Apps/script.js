@@ -63,9 +63,10 @@ inet.controller('mainController', function ($scope, $http, $rootScope, $location
 
 inet.controller('coursesController', function ($scope, $route, $rootScope) {
     var id = $route.current.params.id;
-    var value = parseInt(id[1]);
     $scope.courses = $rootScope.courses;
-    $scope.course = $scope.courses[value];
+    if (id)
+        $scope.course = $scope.courses[parseInt(id[1])];
+
 });
 
 inet.controller('contactController', function ($scope, $rootScope) {
