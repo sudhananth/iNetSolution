@@ -647,17 +647,17 @@
     }
 
 /*  ==================== Google Map Settings ==================== */
-    if($('#map-location').length){
-        var map;
-        map = new GMaps({
-            el: '#map-location',
-            zoom: 15,
-            scrollwheel:false,
-            //Set Latitude and Longitude Here
-            lat: 40.8395922,
-            lng: -74.4818698
-        });
-    }
+    //if($('#map-location').length){
+    //    var map;
+    //    map = new GMaps({
+    //        el: '#map-location',
+    //        zoom: 15,
+    //        scrollwheel:false,
+    //        //Set Latitude and Longitude Here
+    //        lat: 40.8395922,
+    //        lng: -74.4818698
+    //    });
+    //}
 
     
 /*  ==================== Flip Clock ==================== */
