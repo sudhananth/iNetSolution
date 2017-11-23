@@ -1313,7 +1313,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
 }
 
     .irs-blog-slider .item .owl-theme .owl-dots, .owl-theme .owl-nav {
-        margin-top: 50px;
+        margin-top: 10px;
     }
 
 .irs-blog-slider .owl-dots .owl-dot span {
@@ -1594,6 +1594,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
     padding-top: 10px;
     z-index: 999999;
     position: relative;
+    display: none;
 }
 
 .irs-footer-social-icon {
@@ -1796,6 +1797,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
     background-color: #fff;
     border-radius: 10px;
     position: relative;
+    padding-bottom: 1px;
+    border-bottom: 2px solid #eb553a;
 }
 
 .irs-lc-overlay {
@@ -1867,6 +1870,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
 
 .irs-lc-footer {
     position: relative;
+    display: none;
 }
 
 .irs-lc-normal-part {
@@ -2279,8 +2283,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
 /* SOCIAL MEDIA SECOND LAYOUT */
 .irs-social-media {
     background-color: #eb553a;
-    padding-bottom: 25px;
-    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .irs-social-media-ttl {
@@ -2704,8 +2708,9 @@ h3.irs-sbln-title {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    margin-bottom: 40px;
-    padding-bottom: 40px;
+    /*margin-bottom: 40px;*/
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 .irs-cl-list-thumb {
@@ -3690,8 +3695,8 @@ h3.irs-sbln-title {
 
 
 .irs-copy-right {
-    padding-bottom: 20px;
-    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-top: 10px;
     text-align: center;
 }
 
