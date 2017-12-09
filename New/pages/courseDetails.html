@@ -1,0 +1,247 @@
+﻿  <!-- Breadcrumbs Styles -->
+<section class="irs-ip-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3 text-center">
+                <h1 class="irs-bc-title">Courses</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Breadcrumbs html -->
+<section class="irs-ip-brdcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-right irs-bb-right">
+                <ul class="list-inline irs-brdcrmb">
+                    <li><a ng-href="#!/">Home</a></li>
+                    <li><a> > </a></li>
+                    <li><a ng-href="#!/courses">Courses</a></li>
+                    <li><a> > </a></li>
+                    <li><a class="active">Course Details</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="irs-ip-details irs-padb-svnty">
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-sm-12 col-md-8 col-lg-9 clearfix">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="irs-courses-details-title">
+                            <h2 ng-bind="course.Name"></h2>
+                            <ul class="list-inline irs-cl-teacher-info">
+                                <li class="irs-cl-thumb"><img ng-src="images/courses/{{course.AutherImage}}" alt="{{course.AutherImage}}"></li>
+                                <li class="irs-cl-info">with <span class="text-thm2" ng-bind="course.Auther"></span></li>
+                                <li> <span class="text-thm2 flaticon-social-2"></span> 0</li>
+                                <li> <span class="text-thm2 flaticon-interface-1"></span> 0</li>
+                                <!--<li class="pull-right"> <a href="#" class="btn btn-default irs-button-styledark"> Take This Course</a></li>-->
+                            </ul>
+                        </div>
+                        <div class="irs-courses-details-thumb">
+                            <img class="img-responsive img-fluid" ng-src="images/courses/{{course.Image3}}" alt="{{course.Image3}}">
+                            <div ng-show="course.Price > 0" class="irs-cdtls-price"><p ng-bind="course.Price"></p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="irs-courses-details">
+                            <div class="irs-cdetails-tab">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">Description</a></li>
+                                    <!--<li role="presentation"><a href="#curriculum" aria-controls="curriculum" role="tab" data-toggle="tab">Curriculum</a></li>
+                                    <li role="presentation"><a href="#teachers" aria-controls="teachers" role="tab" data-toggle="tab">Teachers</a></li>-->
+                                    <!--<li role="presentation"><a href="#comments" aria-controls="comments" role="tab" data-toggle="tab">Comments</a></li>-->
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="description">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="irs-cdtls-feture-bot">
+                                                    <ul class="list-group">
+                                                        <li>
+                                                            <a class="list-group-item"><span class="flaticon-business text-thm2"></span> Lecture <span class="pull-right" ng-bind="course.Lecture"></span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="list-group-item"><span class="flaticon-clock-1 text-thm2"></span> Duration <span class="pull-right" ng-bind="course.Duration"></span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="list-group-item"><span class="flaticon-pen text-thm2"></span> Quizzes <span class="pull-right"> 3 </span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="list-group-item"><span class="flaticon-arrows-4 text-thm2"></span> Skill Level <span class="pull-right"> All </span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="list-group-item"><span class="flaticon-people-1 text-thm2"></span> Students <span class="pull-right" ng-bind="course.Students"></span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="list-group-item"><span class="flaticon-globe text-thm2"></span> Language <span class="pull-right"> English </span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="list-group-item irs-bbn"><span class="flaticon-technology text-thm2"></span> Assessments <span class="pull-right"> self </span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="irs-courses-dtls-second-para">
+                                                    <div ng-bind-html="course.HtmlContent"></div>
+                                                    <!--<p>In your study of Linguistics, you will be introduced to the analysis of the nature and structure of human language (including topics such as how words and sentences are formed.</p>
+                                                    <p class="irs-mrgntp-thrty">In your study of Linguistics, you will be introduced to the analysis of the nature and structure of human language (including topics such as how words and sentences are formed.</p>
+                                                    <ul class="list-unstyled irs-cdtls-spara">
+                                                        <li><span class="text-thm2 flaticon-correct-symbol"> </span>Teach part time without interrupting your full-time career</li>
+                                                        <li><span class="text-thm2 flaticon-correct-symbol"> </span>Know you’re making a difference sharing your wisdom with students </li>
+                                                        <li><span class="text-thm2 flaticon-correct-symbol"> </span>Connect with all of your students - in a classroom or online - with our smaller class sizes</li>
+                                                    </ul>-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="irs-cdtls-tt-title">weekly timetable</p>
+                                                <div class="row irs-cdtls-timetsble">
+                                                    <div class="col-md-2"><div class="irs-cdtls-ttbg">1st Weak</div></div>
+                                                    <div class="col-md-4"><div class="irs-cc-tt">Courses</div></div>
+                                                    <div class="col-md-6"><div class="irs-cc-tt">Assessment</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="row irs-all-course-bb irs-padb-twnty">
+                                                    <div class="col-md-4 col-md-offset-2">
+                                                        <div class="irs-cc-tt2">Class - I</div>
+                                                        <ul class="list-unstyled irs-cd-listss">
+                                                            <li>Content...</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h4 class="irs-cc-tt3">First Assignment:</h4>
+                                                        <p class="irs-firs-exm">content</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Second raw -->
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="row irs-cdtls-timetsble">
+                                                    <div class="col-md-2"><div class="irs-cdtls-ttbg">2nd Weak</div></div>
+                                                    <div class="col-md-4"><div class="irs-cc-tt">Courses</div></div>
+                                                    <div class="col-md-6"><div class="irs-cc-tt">Assessment</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="row irs-all-course-bb irs-padb-twnty">
+                                                    <div class="col-md-4 col-md-offset-2">
+                                                        <div class="irs-cc-tt2">Class - II</div>
+                                                        <ul class="list-unstyled irs-cd-listss">
+                                                            <li>Content</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h4 class="irs-cc-tt3">First assignment:</h4>
+                                                        <p class="irs-firs-exm">some Content</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+                <div class="irs-sb-courses">
+                    <h3 class="irs-sblc-title text-center">Courses</h3>
+                    <ul class="list-unstyled irs-sbc-list">
+                        <li class="active"><a ng-href="#!/courses"><span class="flaticon-arrows-3"></span> All Courses</a></li>
+                        <li ng-repeat="cour in courses"><a ng-href="{{cour.Url1}}"><span class="flaticon-arrows-3"></span>{{cour.Name}}</a></li>
+                    </ul>
+                </div>
+                <!--<div class="irs-sb-lcourses">
+                    <h3 class="irs-sbc-title text-center">Latest Courses</h3>
+                    <div class="irs-sblc-pack">
+                        <div class="irs-lc-thumb">
+                            <img class="img-responsive" src="images/courses/s7.png" alt="s7.png">
+                            <div class="irs-sblc-overlay"></div>
+                        </div>
+                        <div class="irs-sblc-details">
+                            <h5>Chemical Engineering & Best Technology</h5>
+                            <p class="irs-sblc-price text-thm2">$49.99</p>
+                        </div>
+                    </div>
+                    <div class="irs-sblc-pack">
+                        <div class="irs-lc-thumb">
+                            <img class="img-responsive" src="images/courses/s8.png" alt="s8.png">
+                            <div class="irs-sblc-overlay"></div>
+                        </div>
+                        <div class="irs-sblc-details">
+                            <h5>Electrical & Electronic Engineering</h5>
+                            <p class="irs-sblc-price text-thm2">$49.99</p>
+                        </div>
+                    </div>
+                    <div class="irs-sblc-pack">
+                        <div class="irs-lc-thumb">
+                            <img class="img-responsive" src="images/courses/s9.png" alt="s9.png">
+                            <div class="irs-sblc-overlay"></div>
+                        </div>
+                        <div class="irs-sblc-details">
+                            <h5>Geography Environmental Sciences</h5>
+                            <p class="irs-sblc-price text-thm2">$49.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="irs-sb-bcome-teacher">
+                    <div class="irs-sb-bct-details text-center">
+                        <h3>Become an Instructor Today!</h3>
+                        <a href="#" class="btn btn-lg irs-btn-thm2"> Read More</a>
+                    </div>
+                </div>
+                <div class="irs-sb-lcourses">
+                    <h3 class="irs-sbc-title text-center">Latest News</h3>
+                    <div class="irs-sblc-pack">
+                        <div class="irs-lc-thumb">
+                            <img class="img-responsive" src="images/blog/xs4.png" alt="xs4.png">
+                            <div class="irs-sblc-overlay"></div>
+                        </div>
+                        <div class="irs-sblc-details">
+                            <h5>Social benefits: universal or targeted?</h5>
+                            <p class="irs-sblc-price text-thm2"><span class="text-thm2 flaticon-clock"></span> 20/02/2017</p>
+                        </div>
+                    </div>
+                    <div class="irs-sblc-pack">
+                        <div class="irs-lc-thumb">
+                            <img class="img-responsive" src="images/blog/xs5.png" alt="xs4.png">
+                            <div class="irs-sblc-overlay"></div>
+                        </div>
+                        <div class="irs-sblc-details">
+                            <h5>Educational integration: religion and society</h5>
+                            <p class="irs-sblc-price text-thm2"><span class="text-thm2 flaticon-clock"></span> 19/02/2017</p>
+                        </div>
+                    </div>
+                    <div class="irs-sblc-pack">
+                        <div class="irs-lc-thumb">
+                            <img class="img-responsive" src="images/blog/xs6.png" alt="xs4.png">
+                            <div class="irs-sblc-overlay"></div>
+                        </div>
+                        <div class="irs-sblc-details">
+                            <h5>The importance of good (politic) communicate</h5>
+                            <p class="irs-sblc-price text-thm2"><span class="text-thm2 flaticon-clock"></span> 18/02/2017</p>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</section>
