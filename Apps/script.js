@@ -7,6 +7,7 @@ inet.run(function ($rootScope, $http) {
     }, function (error) {
         alert('Error');
     });
+    
 });
 // configure our routes
 inet.config(function ($routeProvider) {
@@ -15,11 +16,11 @@ inet.config(function ($routeProvider) {
         // route for the home page
         .when('/', {
             templateUrl: 'pages/home.html',
-            controller: 'mainController'
+            controller: 'homeController'
         })
         .when('/home', {
             templateUrl: 'pages/home.html',
-            controller: 'mainController'
+            controller: 'homeController'
         })
         // route for the about page
         .when('/courses', {
@@ -39,27 +40,26 @@ inet.config(function ($routeProvider) {
 
 // create the controller and inject Angular's $scope
 inet.controller('mainController', function ($scope, $http, $rootScope, $location) {
-    // create a message to display in our view  
-    $scope.dd = new Array;
+    // create a message to display in our view 
+    $scope.location = $location.path();
+    $rootScope.$on('$routeChangeSuccess', function () {
+        $scope.location = $location.path();
+    });
     $scope.courses = $rootScope.courses;
-    $scope.navigate = function (path) {
-        if (path.split('!').length > 0)
-            $location.path(path.split('!')[1]);
-    }
-
     $scope.year = new Date().getFullYear();
+});
+inet.controller('homeController', function ($scope, $http, $rootScope, $location) {
+    document.getElementById("mainjsload").innerHTML = "";
     var loadScript = function () {
         var script = document.createElement('script');
         script.type = 'text/javascript';
-        script.src = 'js/script.js';
-        document.body.appendChild(script);
+        script.src = 'js/main.js';
+        document.getElementById("mainjsload").appendChild(script);
     };
     $scope.$on('$viewContentLoaded', function () {
         loadScript();
     });
-
 });
-
 
 inet.controller('coursesController', function ($scope, $route, $rootScope) {
     var id = $route.current.params.id;
@@ -70,4 +70,5 @@ inet.controller('coursesController', function ($scope, $route, $rootScope) {
 });
 
 inet.controller('contactController', function ($scope, $rootScope) {
+    
 });
