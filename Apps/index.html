@@ -22,10 +22,7 @@
     <!--Paraxify css here-->
     <link rel="stylesheet" href="plugins/paraxify/paraxify.css" />
     <!-- Jquery -->
-    <script src="js/jquery.js"></script>
-    <script src="js/angular.min.js"></script>
-    <script src="js/angular-route.js"></script>
-    <script src="js/angular-sanitize.js"></script>
+
 
 </head>
 <body ng-controller="mainController as main">
@@ -74,12 +71,12 @@
                         </ul>
                         <ul id="navigation" class="nav navbar-nav navbar-right">
                             <li ng-class="{active: location === '/'}">
-                                <a href="/#!/">Home</a>
+                                <a href="#!/">Home</a>
                             </li>
                             <li ng-class="{active: location === '/aboutus'}"><a href="#" data-val="#">About us</a></li>
                             <li ng-class="{active: location === '/courses'}"><a href="#" data-val="#">Courses</a></li>
                             <li ng-class="{active: location === '/blog'}"><a href="#" data-val="#">Blog</a></li>
-                            <li ng-class="{active: location === '/contact'}"><a ng-href="/#!/contact">Contact us</a></li>
+                            <li ng-class="{active: location === '/contact'}"><a ng-href="#!/contact">Contact us</a></li>
                             <li class="visible-xs"><a href="javascript:;" data-toggle="modal" data-target="#popupRegister">Register</a></li>
                         </ul>
                     </div>
@@ -326,7 +323,11 @@
     <!-- GO TO TOP FUNCYION START HERE-->
 
     <button onclick="goTopFunction()" id="TopBtn" class="gradientbgTransparent btn btn-gradient"><span class="glyphicon glyphicon-arrow-up"></span></button>
-
+    <script src="js/jquery.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/angular-sanitize.js"></script>
+    <script src="script.js"></script>
     <!-- GO TO TOP FUNCYION END HERE-->
     <!-- All Javascripts -->
     <!-- Bootstrap -->
@@ -343,6 +344,6 @@
         <!-- common js file -->
         <script type="text/javascript" src="js/main.js"></script>
     </div>
-    <script src="script.js"></script>
+
 </body>
 </html>

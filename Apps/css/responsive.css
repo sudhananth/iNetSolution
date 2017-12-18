@@ -44,7 +44,7 @@ body {
 @media screen and (max-width: 767px) {
 
     .contactinfobg {
-        min-height: 380px;
+        display: none;
     }
 
     .tablemargin {

@@ -1,5 +1,5 @@
 // create the module and name it InetSolution
-var inet = angular.module('inet', ['ngRoute', 'ngSanitize']);
+var inet = angular.module('inet', ['ngRoute']);
 inet.run(function ($rootScope, $http) {
     $rootScope.courses = new Array;
     $http({ method: 'GET', url: 'data.json' }).then(function (data) {
@@ -7,7 +7,7 @@ inet.run(function ($rootScope, $http) {
     }, function (error) {
         alert('Error');
     });
-    
+
 });
 // configure our routes
 inet.config(function ($routeProvider) {
@@ -35,7 +35,10 @@ inet.config(function ($routeProvider) {
         .when('/contact', {
             templateUrl: 'pages/contact.html',
             controller: 'contactController'
-        });
+        })
+    .otherwise({
+        redirectTo: '/home'
+    });
 });
 
 // create the controller and inject Angular's $scope
@@ -70,5 +73,5 @@ inet.controller('coursesController', function ($scope, $route, $rootScope) {
 });
 
 inet.controller('contactController', function ($scope, $rootScope) {
-    
+   
 });
