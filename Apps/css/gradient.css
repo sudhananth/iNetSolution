@@ -97,8 +97,8 @@ select::-ms-expand {
 header {
     background-image: url("../images/bg1.jpg");
     background-size: cover;
+    position: relative;
 }
-
 
 /*Navbar styles start here */
 .navbar {
