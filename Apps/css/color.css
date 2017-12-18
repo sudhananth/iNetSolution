@@ -539,3 +539,50 @@ footer ul li a:hover, footer ul li a:focus {
 .margintop150-m {
     margin-top: -150px;
 }
+
+.mapbg {
+    background-image: url(../images/mapbgimg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    border: 1px solid #1c2957;
+}
+
+.padding10 {
+    padding: 10px;
+}
+
+.padding0 {
+    padding: 0;
+}
+
+.contactinfobg {
+    background: #1c2957;
+    color: #fff;
+    min-height: 479px;
+}
+
+.contactheading {
+    font-size: 20px;
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+
+.marginbottom15 {
+    margin-bottom: 15px;
+}
+
+.tabletdpad {
+    vertical-align: top;
+    padding: 0 10px;
+}
+
+.contactfollow {
+    font-size: 20px;
+    text-align: center;
+}
+
+.tablemargin {
+    margin: 0 auto;
+    width: 90%;
+}
