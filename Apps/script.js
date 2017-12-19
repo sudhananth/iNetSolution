@@ -52,36 +52,24 @@ inet.controller('mainController', function ($scope, $http, $rootScope, $location
     $scope.year = new Date().getFullYear();
 });
 inet.controller('homeController', function ($scope, $http, $rootScope, $location) {
-    document.getElementById("mainjsload").innerHTML = "";
-    var loadScript = function () {
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src = 'js/main.js';
-        document.getElementById("mainjsload").appendChild(script);
-    };
-    $scope.$on('$viewContentLoaded', function () {
-        loadScript();
-    });
+    $scope.$on('$viewContentLoaded', function () { loadScript(); });
 });
 
 inet.controller('coursesController', function ($scope, $route, $rootScope) {
     //var id = $route.current.params.id;
     //$scope.courses = $rootScope.courses;
     //if (id)
-    //    $scope.course = $scope.courses[parseInt(id[1])];
-    document.getElementById("mainjsload").innerHTML = "";
-    var loadScript = function () {
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src = 'js/main.js';
-        document.getElementById("mainjsload").appendChild(script);
-    };
-    $scope.$on('$viewContentLoaded', function () {
-        loadScript();
-    });
-
+    //    $scope.course = $scope.courses[parseInt(id[1])];  
+    $scope.$on('$viewContentLoaded', function () { loadScript(); });
 });
 
 inet.controller('contactController', function ($scope, $rootScope) {
-
+    $scope.$on('$viewContentLoaded', function () { loadScript(); });
 });
+var loadScript = function () {
+    document.getElementById("mainjsload").innerHTML = "";
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'js/main.js';
+    document.getElementById("mainjsload").appendChild(script);
+};
