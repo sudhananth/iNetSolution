@@ -736,3 +736,38 @@ footer ul li a:hover, footer ul li a:focus {
         opacity: 0;
     }
 }
+
+.headerLogo {
+    margin: 0 auto;
+}
+
+.logoloader {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 5%;
+}
+
+.coursecontent {
+    color: #fff;
+    font-size: 15px;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.line-height25 {
+    line-height: 25px;
+}
+
+.paddingbottom50 {
+    padding-bottom: 50px;
+}
+
+.color-yellow {
+    color: #ffe8a6;
+}
+

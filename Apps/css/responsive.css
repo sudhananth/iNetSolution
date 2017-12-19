@@ -47,6 +47,14 @@ body {
         display: none;
     }
 
+    .heading1 {
+        font-size: 20px;
+    }
+
+    .heading2 {
+        font-size: 14px;
+    }
+
     .tablemargin {
         width: auto;
     }
@@ -109,7 +117,7 @@ body {
     }
 
     .sectionPadding {
-        padding: 40px 15px;
+        padding: 20px 15px;
     }
 
     .counterDesc {
