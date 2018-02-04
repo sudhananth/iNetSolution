@@ -24,12 +24,16 @@ inet.config(function ($routeProvider) {
         })
         // route for the about page
         .when('/courses', {
-            templateUrl: 'pages/courses.html',
+            templateUrl: 'pages/course.html',
             controller: 'coursesController'
         })
-         .when('/courseDetail/:id', {
-             templateUrl: 'pages/courseDetails.html',
+         .when('/courses/:id', {
+             templateUrl: 'pages/courses.html',
              controller: 'coursesController'
+         })
+         .when('/courses/:id/:subid', {
+             templateUrl: 'pages/courses-details.html',
+             controller: 'coursesdetailsController'
          })
         // route for the contact page
         .when('/contact', {
@@ -56,13 +60,19 @@ inet.controller('homeController', function ($scope, $http, $rootScope, $location
 });
 
 inet.controller('coursesController', function ($scope, $route, $rootScope) {
-    //var id = $route.current.params.id;
+    var id = $route.current.params.id;
     //$scope.courses = $rootScope.courses;
-    //if (id)
-    //    $scope.course = $scope.courses[parseInt(id[1])];  
+    if (id)
+        console.log();
     $scope.$on('$viewContentLoaded', function () { loadScript(); });
 });
-
+inet.controller('coursesController', function ($scope, $route, $rootScope) {
+    var id = $route.current.params.id;
+    var subid = $route.current.params.subid;
+    //$scope.courses = $rootScope.courses;
+    if (id)
+        console.log(id, subid);
+});
 inet.controller('contactController', function ($scope, $rootScope) {
     $scope.$on('$viewContentLoaded', function () { loadScript(); });
 });

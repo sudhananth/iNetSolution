@@ -93,6 +93,7 @@
     }
 
 .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn.active.focus {
+    color: #fff;
     outline: none;
     box-shadow: none;
     background: rgb(221, 48, 83); /* Old browsers */
@@ -770,4 +771,3 @@ footer ul li a:hover, footer ul li a:focus {
 .color-yellow {
     color: #ffe8a6;
 }
-
