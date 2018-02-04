@@ -66,7 +66,7 @@ inet.controller('coursesController', function ($scope, $route, $rootScope) {
         console.log();
     $scope.$on('$viewContentLoaded', function () { loadScript(); });
 });
-inet.controller('coursesController', function ($scope, $route, $rootScope) {
+inet.controller('coursesdetailsController', function ($scope, $route, $rootScope) {
     var id = $route.current.params.id;
     var subid = $route.current.params.subid;
     //$scope.courses = $rootScope.courses;
