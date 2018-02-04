@@ -672,7 +672,7 @@
         content: "";
         height: 3px;
         width: 40px;
-        background: #fdc800;
+        background: #bd276e;
         position: absolute;
         left: 0;
         bottom: -15px;
@@ -700,7 +700,7 @@ h3.sidebar-title {
         left: 0;
         bottom: -15px;
         z-index: 1;
-        background: #fdc800;
+        background: #9c33ad;
     }
 
 .course-details-inner ul.course-feature li {
@@ -724,7 +724,7 @@ h3.sidebar-title {
         border-radius: 50%;
         z-index: 1;
         line-height: 1.3;
-        color: #fdc800;
+        color: #d83059;
     }
 
 .course-details-inner ul.course-feature:after {
@@ -805,7 +805,7 @@ h3.sidebar-title {
                 }
 
 .replay-area ul li i {
-    color: #fdc800;
+    color: #c9316f;
 }
 
 .fa-star:before {
@@ -834,9 +834,9 @@ h3.sidebar-title {
 }
 
 .enroll-btn {
-    color: #002147;
+    color: #ffffff;
     padding: 18px 0;
-    background: #fdc800;
+    background: #b3287b;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
@@ -851,6 +851,10 @@ h3.sidebar-title {
     -o-transition: all .5s ease-out;
     transition: all .5s ease-out;
 }
+
+    .enroll-btn:hover {
+        color: #fff !important;
+    }
 
 .download-btn {
     position: relative;
