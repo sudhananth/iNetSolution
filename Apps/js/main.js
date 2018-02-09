@@ -170,3 +170,9 @@ $(document).ready(function () {
         return re.test(email);
     }
 });
+
+$(document).off("click", "input[type='checkbox']").on("click", "input[type='checkbox']", function () {
+    $("input[type='checkbox']").prop('checked', false);
+    $(this).prop('checked', true);  
+
+});
