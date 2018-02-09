@@ -1,433 +1,267 @@
-﻿  <!-- Breadcrumbs Styles -->
-<style>
-    header {
-        background-image: url(images/Courses/Adobe-Banner.png);
-    }
-</style>
-<section>
-    <header class="paraxify" style="background-position: center center;">
-        <!--top bar-->
-        <div class="overlay">
-            <!--top bar-->
-            <!-- HEADER -->
-            <section class="header-bg paddingbottom50">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="row">
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <h1 class="BigFont white text-center" data-aos="fade-right" data-aos-duration="1000">Adobe</h1>
-                                </div>
-                            </div>
-                        </div>
+﻿<div class="inetcourse-panel">
+    <div class="col-md-12 col-sm-6">
+        <div>
+            <h3 class="heading1" style="padding-left:15px;">Technology Brands</h3>
+            <hr>
+            <div class="col-md-3 col-sm-6">
+                <div class="tab">
+                    <input id="tab-1" type="checkbox" name="tabs">
+                    <label for="tab-1">Adobe</label>
+                    <div class="tab-content style-9">
+                        <ul>
+                            <li><a ng-href="#!/courses/1/1">Adobe</a></li>
+                            <li><a ng-href="#!/courses/1/1">Adobe</a></li>
+                            <li><a ng-href="#!/courses/1/1">Adobe</a></li>                          
+                        </ul>
                     </div>
                 </div>
-            </section>
-            <!--POPULAR COURSES SECTION START HERE-->
-            <section id="popular" class="BorderedSection">
-                <div class="container sectionPadding">
-                    <div class="row">
-                        <div class="col-xs-12 col-md-10 course-list-box">
-                            <div class="category-top">
-                                <div class="col-md-6 col-sm-6 col-xs-12 category-top-filtered">
-                                    <p class="result-counts"><strong>5</strong> Courses <span><strong> 10 </strong> Programming Couchers</span></p>
-                                    <div class="collapsed-tabs visible-xs-inline-block" role="tabpanel">
-                                        <div class="collapsed-tabs-display">
-                                            <span class="collapsed-tabs-active">release date (newest first)</span>
-                                            <i class="icon lyndacon arrow-down"></i>
-                                        </div>
-                                        <ul id="category-filters" class="tabs hidden-xs tab filters" aria-label="Filters" data-target="#category-tabs">
-                                            <li role="presentation" class="tab-name filter active"><a href="?sort=100" class="sort-filter">release date (newest first)</a></li>
-                                            <li role="presentation" class="tab-name filter"><a href="?sort=1" class="sort-filter">release date (oldest first)</a></li>
-                                            <li role="presentation" class="tab-name filter"><a href="?sort=2" class="sort-filter">course title (a-z)</a></li>
-                                            <li role="presentation" class="tab-name filter"><a href="?sort=101" class="sort-filter">course title (z-a)</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-12 category-top-sort">
-                                    <div class="dropdown">
-                                        <button id="btn-sort" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Sort" class="btn btn-transparent hidden-xs ga" data-ga-action="click" data-ga-label="sort-button">
-                                            <span class="glyphicon glyphicon-filter filtericon"></span>Sort By: release date (newest first) <span class="glyphicon glyphicon-menu-down filterarrow"></span>
-                                        </button>
-                                        <ul id="sort-popover" class="dropdown-menu" aria-labelledby="btn-sort">
-                                            <li role="presentation"><a href="?sort=100" class="sort-filter selected">release date (newest first)</a></li>
-                                            <li role="presentation"><a href="?sort=1" class="sort-filter ">release date (oldest first)</a></li>
-                                            <li role="presentation"><a href="?sort=2" class="sort-filter ">course title (a-z)</a></li>
-                                            <li role="presentation"><a href="?sort=101" class="sort-filter ">course title (z-a)</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="category-selected-filters">
-
-                                </div>
-                            </div>
-                            <ul id="category-courses" class="ga-category">
-                                <li role="presentation" class="card-cont">
-                                    <div class="card card-list-style course" data-course-id="639071">
-                                        <div class="card-content">
-                                            <div class="col-xs-4 col-sm-3 image-column">
-                                                <a href="#" class="ga ga-multiple">
-                                                    <div class="thumbnail" role="button">
-                                                        <img src="images/cimage1.jpg" alt="Interaction Design for the Web">
-                                                        <div class="watch-options watch-options-out video-launch">
-                                                            <div role="button" class="watch-course video-launch"><span>Preview Course</span></div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-xs-8 col-sm-9 card-meta-data">
-                                                <a href="#!/courses/1/101" class="ga ga-multiple">
-                                                    <div class="title-author-info">
-                                                        <h3>Acrobat Adobe Fundamentals:  An Introduction to Acrobat DC</h3>
-                                                        <cite class="meta-author hidden-xs"><span>with Chris Nodder</span></cite>
-                                                        <div class="meta-description hidden-xs dot-ellipsis dot-resize-update" style="word-wrap: break-word;">In this three-day course, you’ll get an excellent overview of how to convert your work into Adobe Portable Document Format (PDF) using Adobe Acrobat.</div>
-                                                    </div>
-                                                    <div class="meta">
-                                                        <span class="meta-duration">1h 44m</span>
-                                                        <span class="meta-level">Beginner</span>
-                                                        <span class="meta-released"><span>Jan 25, 2018</span></span>
-                                                        <span class="meta-views">Views <span>5,234</span></span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li role="presentation" class="card-cont">
-                                    <div class="card card-list-style course" data-course-id="639071">
-                                        <div class="card-content">
-                                            <div class="col-xs-4 col-sm-3 image-column">
-                                                <a href="#" class="ga ga-multiple">
-                                                    <div class="thumbnail" role="button">
-                                                        <img src="images/cimage1.jpg" alt="Interaction Design for the Web">
-                                                        <div class="watch-options watch-options-out video-launch">
-                                                            <div role="button" class="watch-course video-launch"><span>Preview Course</span></div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-xs-8 col-sm-9 card-meta-data">
-                                                <a href="#" class="ga ga-multiple">
-                                                    <div class="title-author-info">
-                                                        <h3>Interaction Design for the Web</h3>
-                                                        <cite class="meta-author hidden-xs"><span>with Chris Nodder</span></cite>
-                                                        <div class="meta-description hidden-xs dot-ellipsis dot-resize-update" style="word-wrap: break-word;">Learn about the psychological reasons why good UI design works, so that you can build websites and apps that work the way your users think.</div>
-                                                    </div>
-                                                    <div class="meta">
-                                                        <span class="meta-duration">1h 44m</span>
-                                                        <span class="meta-level">Beginner</span>
-                                                        <span class="meta-released"><span>Jan 25, 2018</span></span>
-                                                        <span class="meta-views">Views <span>5,234</span></span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li role="presentation" class="card-cont">
-                                    <div class="card card-list-style course" data-course-id="639071">
-                                        <div class="card-content">
-                                            <div class="col-xs-4 col-sm-3 image-column">
-                                                <a href="#" class="ga ga-multiple">
-                                                    <div class="thumbnail" role="button">
-                                                        <img src="images/cimage1.jpg" alt="Interaction Design for the Web">
-                                                        <div class="watch-options watch-options-out video-launch">
-                                                            <div role="button" class="watch-course video-launch"><span>Preview Course</span></div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-xs-8 col-sm-9 card-meta-data">
-                                                <a href="#" class="ga ga-multiple">
-                                                    <div class="title-author-info">
-                                                        <h3>Interaction Design for the Web</h3>
-                                                        <cite class="meta-author hidden-xs"><span>with Chris Nodder</span></cite>
-                                                        <div class="meta-description hidden-xs dot-ellipsis dot-resize-update" style="word-wrap: break-word;">Learn about the psychological reasons why good UI design works, so that you can build websites and apps that work the way your users think.</div>
-                                                    </div>
-                                                    <div class="meta">
-                                                        <span class="meta-duration">1h 44m</span>
-                                                        <span class="meta-level">Beginner</span>
-                                                        <span class="meta-released"><span>Jan 25, 2018</span></span>
-                                                        <span class="meta-views">Views <span>5,234</span></span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li role="presentation" class="card-cont">
-                                    <div class="card card-list-style course" data-course-id="639071">
-                                        <div class="card-content">
-                                            <div class="col-xs-4 col-sm-3 image-column">
-                                                <a href="#" class="ga ga-multiple">
-                                                    <div class="thumbnail" role="button">
-                                                        <img src="images/cimage1.jpg" alt="Interaction Design for the Web">
-                                                        <div class="watch-options watch-options-out video-launch">
-                                                            <div role="button" class="watch-course video-launch"><span>Preview Course</span></div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-xs-8 col-sm-9 card-meta-data">
-                                                <a href="#" class="ga ga-multiple">
-                                                    <div class="title-author-info">
-                                                        <h3>Interaction Design for the Web</h3>
-                                                        <cite class="meta-author hidden-xs"><span>with Chris Nodder</span></cite>
-                                                        <div class="meta-description hidden-xs dot-ellipsis dot-resize-update" style="word-wrap: break-word;">Learn about the psychological reasons why good UI design works, so that you can build websites and apps that work the way your users think.</div>
-                                                    </div>
-                                                    <div class="meta">
-                                                        <span class="meta-duration">1h 44m</span>
-                                                        <span class="meta-level">Beginner</span>
-                                                        <span class="meta-released"><span>Jan 25, 2018</span></span>
-                                                        <span class="meta-views">Views <span>5,234</span></span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li role="presentation" class="card-cont">
-                                    <div class="card card-list-style course" data-course-id="639071">
-                                        <div class="card-content">
-                                            <div class="col-xs-4 col-sm-3 image-column">
-                                                <a href="#" class="ga ga-multiple">
-                                                    <div class="thumbnail" role="button">
-                                                        <img src="images/cimage1.jpg" alt="Interaction Design for the Web">
-                                                        <div class="watch-options watch-options-out video-launch">
-                                                            <div role="button" class="watch-course video-launch"><span>Preview Course</span></div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="col-xs-8 col-sm-9 card-meta-data">
-                                                <a href="#" class="ga ga-multiple">
-                                                    <div class="title-author-info">
-                                                        <h3>Interaction Design for the Web</h3>
-                                                        <cite class="meta-author hidden-xs"><span>with Chris Nodder</span></cite>
-                                                        <div class="meta-description hidden-xs dot-ellipsis dot-resize-update" style="word-wrap: break-word;">Learn about the psychological reasons why good UI design works, so that you can build websites and apps that work the way your users think.</div>
-                                                    </div>
-                                                    <div class="meta">
-                                                        <span class="meta-duration">1h 44m</span>
-                                                        <span class="meta-level">Beginner</span>
-                                                        <span class="meta-released"><span>Jan 25, 2018</span></span>
-                                                        <span class="meta-views">Views <span>5,234</span></span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="search-filters" class="hidden-xs hidden-sm col-md-2">
-                            <ul class="filter-set ga-category accessible-tabs" data-context="Category Filters">
-                                <li data-filter="software">
-                                    <h3>Technology</h3>
-                                    <ul class="truncate">
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#">
-                                            <span>Adobe</span><span>(5)</span></a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#">
-                                                <span>AWS</span>
-                                                <span>(15)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#">
-                                                <span>Cisco</span>
-                                                <span>(9)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#">
-                                                <span>IBM</span>
-                                                <span>(8)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#">
-                                                <span>Lean Six Sigma</span>
-                                                <span>(6)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#">
-                                                <span>Oracle</span>
-                                                <span>(4)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#">Red Hat<span>(4)</span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li data-filter="author">
-                                    <h3>IT & Management Training Topics</h3>
-                                    <ul class="truncate" id="style-9">
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>Agile & Scrum</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>Apple Programming</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>Azure</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>Big Data</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>Business Analysis</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>Windows Training</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>Communication Skills</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>Cyber Security</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>DevOps</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>Java Programming</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>Java Programming</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>Leadership</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>Web Development</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>Business Intelligence</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>Cloud Computing</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>Linux & UNIX</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>Microsoft Office</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>Mobile App Development</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>SQL Server</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>SharePoint</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>.NET / Visual Studio</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>Virtualization</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>Project Management</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span> Python, Perl & C++</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-                                        <li tabindex="0">
-                                            <a class="filter ga ga-multiple" href="#" tabindex="-1">
-                                                <span>Software Development</span>
-                                                <span>(11)</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-
-                        </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="tab">
+                    <input id="tab-2" type="checkbox" name="tabs">
+                    <label for="tab-2">AWS</label>
+                    <div class="tab-content style-9">
+                        <ul>
+                            <li><a ng-href="#!/courses/1/1">AWS</a></li>
+                            <li><a ng-href="#!/courses/1/1">AWS</a></li>
+                            <li><a ng-href="#!/courses/1/1">AWS</a></li>
+                        </ul>
                     </div>
                 </div>
-            </section>
-            <!--POPULAR COURSES SECTION END HERE-->
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="tab">
+                    <input id="tab-3" type="checkbox" name="tabs">
+                    <label for="tab-3">Cisco</label>
+                    <div class="tab-content style-9">
+                        <ul>
+                            <li><a ng-href="#!/courses/1/1">Cisco</a></li>
+                            <li><a ng-href="#!/courses/1/1">Cisco</a></li>
+                            <li><a ng-href="#!/courses/1/1">Cisco</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="tab">
+                    <input id="tab-4" type="checkbox" name="tabs">
+                    <label for="tab-4">IBM</label>
+                    <div class="tab-content style-9">
+                        <ul>
+                            <li><a ng-href="#!/courses/1/1">IBM</a></li>
+                            <li><a ng-href="#!/courses/1/1">IBM</a></li>
+                            <li><a ng-href="#!/courses/1/1">IBM</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="tab">
+                    <input id="tab-5" type="checkbox" name="tabs">
+                    <label for="tab-5">Lean Six Sigma</label>
+                    <div class="tab-content style-9">
+                        <ul>
+                            <li><a ng-href="#!/courses/1/1">Lean Six Sigma</a></li>
+                            <li><a ng-href="#!/courses/1/1">Lean Six Sigma</a></li>
+                            <li><a ng-href="#!/courses/1/1">Lean Six Sigma</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="tab">
+                    <input id="tab-6" type="checkbox" name="tabs">
+                    <label for="tab-6">Microsoft</label>
+                    <div class="tab-content style-9">
+                        <ul>
+                            <li><a ng-href="#!/courses/1/1">Microsoft</a></li>
+                            <li><a ng-href="#!/courses/1/1">Microsoft</a></li>
+                            <li><a ng-href="#!/courses/1/1">Microsoft</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="tab">
+                    <input id="tab-7" type="checkbox" name="tabs">
+                    <label for="tab-7">Oracle</label>
+                    <div class="tab-content style-9">
+                        <ul>
+                            <li><a ng-href="#!/courses/1/1">Oracle</a></li>
+                            <li><a ng-href="#!/courses/1/1">Oracle</a></li>
+                            <li><a ng-href="#!/courses/1/1">Oracle</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="tab">
+                    <input id="tab-8" type="checkbox" name="tabs">
+                    <label for="tab-8">Red Hat</label>
+                    <div class="tab-content style-9">
+                        <ul>
+                            <li><a ng-href="#!/courses/1/1">Red Hat</a></li>
+                            <li><a ng-href="#!/courses/1/1">Red Hat</a></li>
+                            <li><a ng-href="#!/courses/1/1">Red Hat</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>  
         </div>
-    </header>
-</section>
+    </div>
+    <div class="col-md-12 col-sm-6">
+        <div>
+            <h3 class="heading1" style="padding-left:15px;">IT &amp; Management Training Topics</h3>
+            <hr>
+            <div class="col-md-3 col-sm-6">
+                <div class="tab">
+                    <input id="tab-9" type="checkbox" name="tabs">
+                    <label for="tab-9">Agile &amp; Scrum</label>
+                    <div class="tab-content style-9">
+                        <ul>
+                            <li><a ng-href="#!/courses/1/1">Agile &amp; Scrum</a></li>
+                            <li><a ng-href="#!/courses/1/1">Agile &amp; Scrum</a></li>
+                            <li><a ng-href="#!/courses/1/1">Agile &amp; Scrum</a></li>
+                            <li><a ng-href="#!/courses/1/1">Agile &amp; Scrum</a></li>
+                            <li><a ng-href="#!/courses/1/1">Agile &amp; Scrum</a></li>
+                            <li><a ng-href="#!/courses/1/1">Agile &amp; Scrum</a></li>
+                            <li><a ng-href="#!/courses/1/1">Agile &amp; Scrum</a></li>
+                            <li><a ng-href="#!/courses/1/1">Agile &amp; Scrum</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="tab">
+                    <input id="tab-10" type="checkbox" name="tabs">
+                    <label for="tab-10">Apple Programming</label>
+                    <div class="tab-content style-9">
+                        <ul>
+                            <li><a ng-href="#!/courses/1/1">Agile &amp; Scrum</a></li>
+                            <li><a ng-href="#!/courses/1/1">Agile &amp; Scrum</a></li>
+                            <li><a ng-href="#!/courses/1/1">Agile &amp; Scrum</a></li>
+                            <li><a ng-href="#!/courses/1/1">Agile &amp; Scrum</a></li>
+                            <li><a ng-href="#!/courses/1/1">Agile &amp; Scrum</a></li>
+                            <li><a ng-href="#!/courses/1/1">Agile &amp; Scrum</a></li>
+                            <li><a ng-href="#!/courses/1/1">Agile &amp; Scrum</a></li>
+                            <li><a ng-href="#!/courses/1/1">Agile &amp; Scrum</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="tab">
+                    <input id="tab-11" type="checkbox" name="tabs">
+                    <label for="tab-11">Azure</label>
+                    <div class="tab-content style-9">
+                        <ul>
+                            <li><a ng-href="#!/courses/1/1">Azure</a></li>
+                            <li><a ng-href="#!/courses/1/1">Azure</a></li>
+                            <li><a ng-href="#!/courses/1/1">Azure</a></li>
+                            <li><a ng-href="#!/courses/1/1">Azure</a></li>
+                            <li><a ng-href="#!/courses/1/1">Azure</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="tab">
+                    <input id="tab-12" type="checkbox" name="tabs">
+                    <label for="tab-12">Big Data</label>
+                    <div class="tab-content style-9">
+                        <ul>
+                            <li><a ng-href="#!/courses/1/1">Big Data</a></li>
+                            <li><a ng-href="#!/courses/1/1">Big Data</a></li>
+                            <li><a ng-href="#!/courses/1/1">Big Data</a></li>
+                            <li><a ng-href="#!/courses/1/1">Big Data</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="tab">
+                    <input id="tab-13" type="checkbox" name="tabs">
+                    <label for="tab-13">Business Analysis</label>
+                    <div class="tab-content style-9">
+                        <ul>
+                            <li><a ng-href="#!/courses/1/1">Business Analysis</a></li>
+                            <li><a ng-href="#!/courses/1/1">Business Analysis</a></li>
+                            <li><a ng-href="#!/courses/1/1">Business Analysis</a></li>
+                            <li><a ng-href="#!/courses/1/1">Business Analysis</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="tab">
+                    <input id="tab-14" type="checkbox" name="tabs">
+                    <label for="tab-14">Windows Training</label>
+                    <div class="tab-content style-9">
+                        <ul>
+                            <li><a ng-href="#!/courses/1/1">Windows Training</a></li>
+                            <li><a ng-href="#!/courses/1/1">Windows Training</a></li>
+                            <li><a ng-href="#!/courses/1/1">Windows Training</a></li>
+                            <li><a ng-href="#!/courses/1/1">Windows Training</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="tab">
+                    <input id="tab-15" type="checkbox" name="tabs">
+                    <label for="tab-15">Communication Skills</label>
+                    <div class="tab-content style-9">
+                        <ul>
+                            <li><a ng-href="#!/courses/1/1">Communication Skills</a></li>
+                            <li><a ng-href="#!/courses/1/1">Communication Skills</a></li>
+                            <li><a ng-href="#!/courses/1/1">Communication Skills</a></li>
+                            <li><a ng-href="#!/courses/1/1">Communication Skills</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="tab">
+                    <input id="tab-16" type="checkbox" name="tabs">
+                    <label for="tab-16">Cyber Security</label>
+                    <div class="tab-content style-9">
+                        <ul>
+                            <li><a ng-href="#!/courses/1/1">Cyber Security</a></li>
+                            <li><a ng-href="#!/courses/1/1">Cyber Security</a></li>
+                            <li><a ng-href="#!/courses/1/1">Cyber Security</a></li>
+                            <li><a ng-href="#!/courses/1/1">Cyber Security</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="tab">
+                    <input id="tab-17" type="checkbox" name="tabs">
+                    <label for="tab-17">Java Programming</label>
+                    <div class="tab-content style-9">
+                        <ul>
+                            <li><a ng-href="#!/courses/1/1">Java Programming</a></li>
+                            <li><a ng-href="#!/courses/1/1">Java Programming</a></li>
+                            <li><a ng-href="#!/courses/1/1">Java Programming</a></li>
+                            <li><a ng-href="#!/courses/1/1">Java Programming</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="tab">
+                    <input id="tab-18" type="checkbox" name="tabs">
+                    <label for="tab-18">Web Development</label>
+                    <div class="tab-content style-9">
+                        <ul>
+                            <li><a ng-href="#!/courses/1/1">Web Development</a></li>
+                            <li><a ng-href="#!/courses/1/1">Web Development</a></li>
+                            <li><a ng-href="#!/courses/1/1">Web Development</a></li>
+                            <li><a ng-href="#!/courses/1/1">Web Development</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
