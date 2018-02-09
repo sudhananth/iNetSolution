@@ -64,7 +64,7 @@ inet.controller('coursesController', function ($scope, $route, $rootScope) {
     //$scope.courses = $rootScope.courses;
     if (id)
         console.log();
-    $scope.$on('$viewContentLoaded', function () { loadScript(); });
+    $scope.$on('$viewContentLoaded', function () { loadScript(); });    
 });
 inet.controller('coursesdetailsController', function ($scope, $route, $rootScope) {
     var id = $route.current.params.id;
@@ -83,3 +83,35 @@ var loadScript = function () {
     script.src = 'js/main.js';
     document.getElementById("mainjsload").appendChild(script);
 };
+inet.directive('course', function () {
+
+    var controller = ['$scope', function ($scope) {
+
+        function init() {
+            $scope.items = angular.copy($scope.datasource);
+        }
+
+        init();
+
+        $scope.addItem = function () {
+            $scope.add();
+
+            //Add new customer to directive scope
+            $scope.items.push({
+                name: 'New Directive Controller Item'
+            });
+        };
+    }],
+
+      template = 'pages/courses.html';
+
+    return {
+        restrict: 'EA', //Default in 1.3+
+        scope: {
+            datasource: '=',
+            add: '&',
+        },
+        controller: controller,
+        templateUrl: template
+    };
+});
