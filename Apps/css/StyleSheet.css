@@ -604,3 +604,7 @@ sidebar-question-form .form-group textarea {
     content: ' ';
     clear: both;
 }
+
+.margintop-6per {
+    margin-top: 6%;
+}
