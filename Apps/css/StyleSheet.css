@@ -563,6 +563,7 @@ sidebar-question-form .form-group textarea {
 .tab label::after {
     content: "+";
 }
+
 .tab label.checked::after {
     transform: rotate(315deg);
 }
@@ -600,4 +601,8 @@ sidebar-question-form .form-group textarea {
 
 .margintop-6per {
     margin-top: 6%;
+}
+
+.navbar-brand {
+    padding: 5px 15px;
 }
