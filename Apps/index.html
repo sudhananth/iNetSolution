@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en" ng-app="inet">
 <head>
-    <title>iNetSolutions</title>
+    <title>nubekins</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="images/favi.png">
@@ -66,20 +66,20 @@
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav GradinetNav navbar-nav navbar-right hidden-xs hidden-sm">
+                        <!--<ul class="nav GradinetNav navbar-nav navbar-right hidden-xs hidden-sm">
                             <li>
                                 <a href="javascript:;" class="btn borderBTn" style="margin-bottom: 0px;" data-toggle="modal" data-target="#popupRegister">Account</a>
                             </li>
-                        </ul>
+                        </ul>-->
                         <ul id="navigation" class="nav navbar-nav navbar-right">
                             <li ng-class="{active: location === '/'}">
                                 <a href="#!/">Home</a>
                             </li>
-                            <li ng-class="{active: location === '/aboutus'}"><a href="#" data-val="#">About us</a></li>
+                            <li ng-class="{active: location === '/about'}"><a ng-href="#!/about">About us</a></li>
                             <li ng-class="{active: location === '/courses'}"><a ng-href="#!/courses">Courses</a></li>
-                            <li ng-class="{active: location === '/blog'}"><a href="#" data-val="#">Blog</a></li>
+                            <!--<li ng-class="{active: location === '/blog'}"><a href="#" data-val="#">Blog</a></li>-->
                             <li ng-class="{active: location === '/contact'}"><a ng-href="#!/contact">Contact us</a></li>
-                            <li class="visible-xs"><a href="javascript:;" data-toggle="modal" data-target="#popupRegister">Register</a></li>
+                            <!--<li class="visible-xs"><a href="javascript:;" data-toggle="modal" data-target="#popupRegister">Register</a></li>-->
                         </ul>
                     </div>
 
@@ -95,7 +95,7 @@
                                 <div class="col-md-6 col-sm-9 col-xs-12">
                                     <h1 class="BigFont white" data-aos="fade-right" data-aos-duration="1000">IT Training Courses & Certifications</h1>
                                     <p class="white bannerDesc" data-aos="fade-left" data-aos-duration="1000">
-                                        iNetSolutions is an offshore IT training company providing certification courses on microsoft, oracle, cisco, vmware, dynamics etc. in India.
+                                        nubekins is an offshore IT training company providing certification courses on microsoft, oracle, cisco, vmware, dynamics etc. in India.
                                     </p>
 
                                     <!--<p class="spacetop bannerBtns" data-aos="flip-down" data-aos-duration="1000">
@@ -256,7 +256,7 @@
                                     Plot No:3, Pillayar koil Street,Durga Nagar,<br />
                                     Tambaram Sanatorium,<br />Chennai-600 047.
                                 </p>
-                                <ul>
+                                <ul style="padding: 0 0 10px 0;">
                                     <li>Mobile no: +91 9003538366</li>
                                     <li>Email:- train2shine@demoprocess.in</li>
                                 </ul>
@@ -276,7 +276,7 @@
                                     <ul>
                                         <li><a href="javascript:;">About Us</a></li>
                                         <li><a ng-href="#!/courses">Course</a></li>
-                                        <li><a href="javascript:;">Blog</a></li>
+                                        <!--<li><a href="javascript:;">Blog</a></li>-->
                                         <li><a ng-href="#!/contact">Contact Us</a></li>
                                     </ul>
                                 </div>
@@ -294,7 +294,7 @@
                         <div class="row white">
                             <div class="col-md-6 col-sm-6 col-xs-12">
                                 <p>
-                                    &copy; Copyright {{year}}, all rights reserved by <a href="#" target="_blank" class="gradientColor">iNetSolutions</a>.
+                                    &copy; Copyright {{year}}, all rights reserved by <a href="#" target="_blank" class="gradientColor">nubekins</a>.
                                 </p>
                             </div>
                             <div class="col-md-6 col-sm-6 col-xs-12 text-right">
@@ -336,6 +336,7 @@
     <script src="js/angular.min.js"></script>
     <script src="js/angular-route.js"></script>
     <script src="js/angular-sanitize.js"></script>
+  
     <script src="script.js"></script>
     <!-- GO TO TOP FUNCYION END HERE-->
     <!-- All Javascripts -->
