@@ -534,7 +534,7 @@ sidebar-question-form .form-group textarea {
         margin: 1em;
     }
 /* :checked */
-.tab input:checked ~ .tab-content {
+.tab .tab-content {
     max-height: 250px;
     border: 1px solid #9c33ad;
     overflow: hidden;
@@ -558,19 +558,12 @@ sidebar-question-form .form-group textarea {
     width: 20px;
 }
 
-.tab input[type=checkbox] + label::after {
+
+
+.tab label::after {
     content: "+";
 }
-
-.tab input[type=radio] + label::after {
-    content: "+";
-}
-
-.tab input[type=checkbox]:checked + label::after {
-    transform: rotate(315deg);
-}
-
-.tab input[type=radio]:checked + label::after {
+.tab label.checked::after {
     transform: rotate(315deg);
 }
 

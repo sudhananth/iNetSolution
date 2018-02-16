@@ -95,7 +95,7 @@ select::-ms-expand {
 /* header syles start here*/
 
 header {
-    background-image: url("../images/bg1.jpg");
+    background-image: url("../images/Courses/bg1.jpg");
     background-size: cover;
     position: relative;
 }
@@ -884,6 +884,7 @@ footer ul {
 
 .rightsReserved {
     padding-top: 30px;
+    padding-bottom: 20px;
     border-top: 1px solid rgba(255,255,255,0.15);
 }
 
