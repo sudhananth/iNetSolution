@@ -1,7 +1,7 @@
 ﻿  <!-- Breadcrumbs Styles -->
 <style>
     header {
-        background-image: url(images/Courses/Adobe-Banner.png);
+        background-image: url(images/Courses/{{data.mdata.image1=="" ? 'bg1.jpg' : data.mdata.image1 }});
     }
 </style>
 <section>
@@ -16,7 +16,7 @@
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="row">
                                 <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <h1 class="BigFont white text-center" data-aos="fade-right" data-aos-duration="1000">Acrobat Adobe Fundamentals:  An Introduction to Acrobat DC</h1>
+                                    <h1 class="BigFont white text-center" data-aos="fade-right" data-aos-duration="1000" ng-bind="data.mdata.label"></h1>
                                 </div>
                             </div>
                         </div>
@@ -32,18 +32,18 @@
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <div class="course-details-inner">
-                                            <h2 class="title-default-left title-bar-high">Advance WordPress Development Class</h2>
-                                            <p>Bimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specime book. It has survived not only five centuries.</p>
+                                            <h2 class="title-default-left title-bar-high" ng-bind="data.mdata.heading"></h2>
+                                            <p ng-bind="data.mdata.content"></p>
                                             <h3 class="sidebar-title">Course Features</h3>
                                             <ul class="course-feature">
-                                                <li>Start: 01 January, 2017</li>
-                                                <li>Course Duration: 3 Month</li>
-                                                <li>Total Credits: 150</li>
-                                                <li>Seats Available: 200</li>
-                                                <li>Total Classes : 100</li>
-                                                <li>Time: 10 am - 11.00 am</li>
-                                                <li>Class: Sunday - Monday</li>
-                                                <li>Lecturer: 03</li>
+                                                <li>Start: <span ng-bind="data.fdata.start"></span></li>
+                                                <li>Course Duration: <span ng-bind="data.fdata.courseDuration"></span></li>
+                                                <li>Total Credits: <span ng-bind="data.fdata.totalCredits"></span></li>
+                                                <li>Seats Available: <span ng-bind="data.fdata.seatsAvailable"></span></li>
+                                                <li>Total Classes : <span ng-bind="data.fdata.totalClasses"></span></li>
+                                                <li>Time: <span ng-bind="data.fdata.time"></span></li>
+                                                <li>Class: <span ng-bind="data.fdata.class"></span></li>
+                                                <li>Lecturer: <span ng-bind="data.fdata.lecturer"></span></li>
                                             </ul>
                                         </div>
                                         <div class="section-divider"></div>
@@ -185,8 +185,8 @@
                                         <div class="sidebar-box-inner">
                                             <h3 class="sidebar-title">Course Price</h3>
                                             <div class="sidebar-course-price">
-                                                <span>$400.00</span>
-                                                <a href="#" class="enroll-btn">Enroll THis Course</a>
+                                                <span ng-bind="data.mdata.price"></span>
+                                                <a href="#" class="enroll-btn">Enroll This Course</a>
                                             </div>
                                         </div>
                                     </div>
@@ -195,31 +195,13 @@
                                             <h3 class="sidebar-title">Skilled Lecturer</h3>
                                             <div class="sidebar-skilled-area">
                                                 <ul>
-                                                    <li>
+                                                    <li ng-repeat="s in data.ldata">
                                                         <div class="skilled-img">
-                                                            <a href="#"><img src="images/1.jpg" class="img-responsive" alt="skilled"></a>
+                                                            <a href="#"><img src="images/{{s.image1}}" class="img-responsive" alt="skilled"></a>
                                                         </div>
                                                         <div class="skilled-content">
-                                                            <h4><a href="#">Kazi Fahim</a></h4>
-                                                            <p>Senior WordPress Developer</p>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="skilled-img">
-                                                            <a href="#"><img src="images/1.jpg" class="img-responsive" alt="skilled"></a>
-                                                        </div>
-                                                        <div class="skilled-content">
-                                                            <h4><a href="#">Daizy</a></h4>
-                                                            <p>Graphic Designer</p>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="skilled-img">
-                                                            <a href="#"><img src="images/1.jpg" class="img-responsive" alt="skilled"></a>
-                                                        </div>
-                                                        <div class="skilled-content">
-                                                            <h4><a href="#">Masum Devid</a></h4>
-                                                            <p>Senior UI Designer</p>
+                                                            <h4><a href="#">{{s.name}}</a></h4>
+                                                            <p>{{s.desc}}</p>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -231,40 +213,13 @@
                                             <h3 class="sidebar-title">Related Courses</h3>
                                             <div class="sidebar-related-area">
                                                 <ul>
-                                                    <li>
+                                                    <li ng-repeat="n in data.rdata">
                                                         <div class="related-img">
-                                                            <a href="#"><img src="images/4.jpg" class="img-responsive" alt="related"></a>
+                                                            <a ng-href="#!/courses/{{pcourseid}}/{{n.id}}"><img src="images/{{n.image2}}" class="img-responsive" alt="related"></a>
                                                         </div>
                                                         <div class="related-content">
-                                                            <h4><a href="#">GMAT Class</a></h4>
-                                                            <p>$159</p>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="related-img">
-                                                            <a href="#"><img src="images/4.jpg" class="img-responsive" alt="related"></a>
-                                                        </div>
-                                                        <div class="related-content">
-                                                            <h4><a href="#">IELTS Class</a></h4>
-                                                            <p>$200</p>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="related-img">
-                                                            <a href="#"><img src="images/4.jpg" class="img-responsive" alt="related"></a>
-                                                        </div>
-                                                        <div class="related-content">
-                                                            <h4><a href="#">Joomla Class</a></h4>
-                                                            <p>$120</p>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="related-img">
-                                                            <a href="#"><img src="images/4.jpg" class="img-responsive" alt="related"></a>
-                                                        </div>
-                                                        <div class="related-content">
-                                                            <h4><a href="#">Graphic Desing</a></h4>
-                                                            <p>$300</p>
+                                                            <h4><a ng-href="#!/courses/{{pcourseid}}/{{n.id}}">{{n.label}}</a></h4>
+                                                            <p ng-bind="n.price"></p>
                                                         </div>
                                                     </li>
                                                 </ul>
