@@ -60,6 +60,7 @@ inet.controller('mainController', function ($scope, $http, $rootScope, $location
     $scope.year = new Date().getFullYear();
 });
 inet.controller('homeController', function ($scope, $http, $rootScope, $location) {
+    $scope.courses = $rootScope.datas;
     $scope.$on('$viewContentLoaded', function () { loadScript(); });
 });
 
