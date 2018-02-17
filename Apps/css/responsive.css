@@ -453,3 +453,14 @@ body {
 .navbar-default .navbar-toggle {
     border-color: #000;
 }
+
+@media screen and (max-width: 480px) {
+    .course-details-comments .media .media-body .replay-area {      
+        top: 55px !important;
+        left: 20px;
+    }
+
+    .course-details-comments .media .media-body p {
+        margin-top: 15px;
+    }
+}
