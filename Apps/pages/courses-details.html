@@ -45,7 +45,7 @@
                                                 <li>Class: <span ng-bind="data.fdata.class"></span></li>
                                                 <li>Lecturer: <span ng-bind="data.fdata.lecturer"></span></li>
                                             </ul>
-                                            <div>
+                                            <div ng-show="data.mdata.htmlcontent!=''">
                                                 <div class="text-center">
                                                     <input type="button" ng-click="showToggle = !showToggle" name="name" class="showmorebtn" value="{{showToggle ? 'Less Content...':'More Content...'}}" />
                                                 </div>
