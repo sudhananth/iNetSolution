@@ -9,7 +9,7 @@
           "label": "AWS",
           "heading": "Amazon Web Services (AWS) - Cloud Computing Services",
           "content": "Amazon Web Services is a subsidiary of Amazon.com that provides on-demand cloud computing platforms to individuals, companies and governments, on a paid subscription basis",
-          "htmlcontent": "",
+          "htmlcontent": "aws-content.html",
           "price": 0,
           "image1": "bg2.jpg",
           "image2": "4.jpg",
