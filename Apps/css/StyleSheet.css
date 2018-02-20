@@ -606,3 +606,39 @@ sidebar-question-form .form-group textarea {
 .navbar-brand {
     padding: 5px 15px;
 }
+
+.showmorebtn {
+    background: #d83059;
+    border: 1px solid #7b1830;
+    color: #fff;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 0 18px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    height: 24px;
+    line-height: 20px;
+    outline: none;
+}
+
+    .showmorebtn:hover {
+        background: #7b1830;
+    }
+
+ul.a {
+    list-style-type: circle;
+}
+
+ul.b {
+    list-style-type: square;
+}
+
+ol.c {
+    list-style-type: upper-roman;
+}
+
+ol.d {
+    list-style-type: lower-alpha;
+}
