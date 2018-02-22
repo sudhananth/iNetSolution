@@ -11,8 +11,8 @@
           "content": "Amazon Web Services is a subsidiary of Amazon.com that provides on-demand cloud computing platforms to individuals, companies and governments, on a paid subscription basis",
           "htmlcontent": "aws-content.html",
           "price": 0,
-          "image1": "bg2.jpg",
-          "image2": "4.jpg",
+          "image1": "aws-banner.jpg",
+          "image2": "aws-banner.jpg",
           "featureid": 1,
           "lecturersid": [ 1, 2, 3 ]
         },
@@ -24,7 +24,7 @@
           "htmlcontent": "",
           "price": 0,
           "image1": "azure-banner.jpg",
-          "image2": "4.jpg",
+          "image2": "azure-banner.jpg",
           "featureid": 1,
           "lecturersid": [ 1, 3 ]
         },
@@ -36,7 +36,7 @@
           "htmlcontent": "",
           "price": 0,
           "image1": "google-banner.jpg",
-          "image2": "4.jpg",
+          "image2": "google-banner.jpg",
           "featureid": 1,
           "lecturersid": [ 1, 2 ]
         },
@@ -48,7 +48,7 @@
           "htmlcontent": "",
           "price": 0,
           "image1": "ibm-banner.jpg",
-          "image2": "4.jpg",
+          "image2": "ibm-banner.jpg",
           "featureid": 1,
           "lecturersid": [ 1, 2, 3 ]
         }
@@ -67,7 +67,7 @@
           "htmlcontent": "",
           "price": 0,
           "image1": "mvc-banner.jpg",
-          "image2": "4.jpg",
+          "image2": "mvc-banner.jpg",
           "featureid": 1,
           "lecturersid": [ 1, 2, 3 ]
         },
@@ -79,7 +79,7 @@
           "htmlcontent": "",
           "price": 0,
           "image1": "asp-banner.jpg",
-          "image2": "4.jpg",
+          "image2": "asp-banner.jpg",
           "featureid": 1,
           "lecturersid": [ 1, 2, 3 ]
         },
@@ -91,7 +91,7 @@
           "htmlcontent": "",
           "price": 0,
           "image1": "cs-banner.jpg",
-          "image2": "4.jpg",
+          "image2": "cs-banner.jpg",
           "featureid": 1,
           "lecturersid": [ 1, 2, 3 ]
         }

@@ -63,7 +63,7 @@
                                                 <h3 class="sidebar-title">Student Reviews</h3>
                                                 <div class="media">
                                                     <a href="#" class="pull-left">
-                                                        <img alt="Comments" src="images/16.jpg" class="media-object">
+                                                        <img alt="Comments" ng-src="images/students/16.jpg" class="media-object">
                                                     </a>
                                                     <div class="media-body">
                                                         <h3><a href="#">Greg Christman</a></h3>
@@ -82,7 +82,7 @@
                                                 </div>
                                                 <div class="media">
                                                     <a href="#" class="pull-left">
-                                                        <img alt="Comments" src="images/16.jpg" class="media-object">
+                                                        <img alt="Comments" ng-src="images/students/16.jpg" class="media-object">
                                                     </a>
                                                     <div class="media-body">
                                                         <h3><a href="#">Lora Ekram</a></h3>
@@ -101,7 +101,7 @@
                                                 </div>
                                                 <div class="media">
                                                     <a href="#" class="pull-left">
-                                                        <img alt="Comments" src="images/16.jpg" class="media-object">
+                                                        <img alt="Comments" ng-src="images/students/16.jpg" class="media-object">
                                                     </a>
                                                     <div class="media-body">
                                                         <h3><a href="#">Mike Jones</a></h3>
@@ -120,7 +120,7 @@
                                                 </div>
                                                 <div class="media">
                                                     <a href="#" class="pull-left">
-                                                        <img alt="Comments" src="images/16.jpg" class="media-object">
+                                                        <img alt="Comments" ng-src="images/students/16.jpg" class="media-object">
                                                     </a>
                                                     <div class="media-body">
                                                         <h3><a href="#">Greg Christman</a></h3>
@@ -208,7 +208,7 @@
                                                 <ul>
                                                     <li ng-repeat="s in data.ldata">
                                                         <div class="skilled-img">
-                                                            <a href="#"><img src="images/{{s.image1}}" class="img-responsive" alt="skilled"></a>
+                                                            <a href="#"><img ng-src="images/lecturer/{{s.image1}}" class="img-responsive" alt="skilled"></a>
                                                         </div>
                                                         <div class="skilled-content">
                                                             <h4><a href="#">{{s.name}}</a></h4>
@@ -226,7 +226,7 @@
                                                 <ul>
                                                     <li ng-repeat="n in data.rdata">
                                                         <div class="related-img">
-                                                            <a ng-href="#!/courses/{{pcourseid}}/{{n.id}}"><img src="images/{{n.image2}}" class="img-responsive" alt="related"></a>
+                                                            <a ng-href="#!/courses/{{pcourseid}}/{{n.id}}"><img ng-src="images/{{n.image2}}" class="img-responsive" alt="related"></a>
                                                         </div>
                                                         <div class="related-content">
                                                             <h4><a ng-href="#!/courses/{{pcourseid}}/{{n.id}}">{{n.label}}</a></h4>
