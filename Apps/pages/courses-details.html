@@ -45,16 +45,15 @@
                                                 <li>Class: <span ng-bind="data.fdata.class"></span></li>
                                                 <li>Lecturer: <span ng-bind="data.fdata.lecturer"></span></li>
                                             </ul>
-                                            <div ng-show="data.mdata.htmlcontent!=''">
-                                                <div class="text-center">
+                                            <div>
+                                                <!--<div class="text-center">
                                                     <input type="button" ng-click="showToggle = !showToggle" name="name" class="showmorebtn" value="{{showToggle ? 'Less Content...':'More Content...'}}" />
-                                                </div>
-                                                <div ng-show="showToggle">
+                                                </div>-->
+                                                <div ng-show="data.mdata.htmlcontent!=''">
                                                     <h3 class="sidebar-title">Course Description</h3>
                                                     <div ng-include="'dynamic-pages/'+ data.mdata.htmlcontent"></div>
                                                 </div>
-                                            </div>
-                                           
+                                            </div>                                           
                                         </div>
                                         
                                         <div class="section-divider"></div>
@@ -226,7 +225,7 @@
                                                 <ul>
                                                     <li ng-repeat="n in data.rdata">
                                                         <div class="related-img">
-                                                            <a ng-href="#!/courses/{{pcourseid}}/{{n.id}}"><img ng-src="images/{{n.image2}}" class="img-responsive" alt="related"></a>
+                                                            <a ng-href="#!/courses/{{pcourseid}}/{{n.id}}"><img ng-src="images/Courses/{{n.image2}}" class="img-responsive" alt="related"></a>
                                                         </div>
                                                         <div class="related-content">
                                                             <h4><a ng-href="#!/courses/{{pcourseid}}/{{n.id}}">{{n.label}}</a></h4>

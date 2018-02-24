@@ -1,6 +1,6 @@
 ﻿<div class="col-md-3 col-sm-6" ng-repeat="x in info.courses">
     <div class="tab">
-        <label ng-click="toggle(x.id,$event)" ng-bind="x.label"></label>
+        <label class="course_scroll" ng-click="toggle(x.id,$event)" ng-bind="x.label"></label>
         <div class="tab-content style-9" ng-show="togglevalue==x.id">
             <ul>
                 <li ng-repeat="y in x.subcourses"><a ng-href="#!/courses/{{x.id}}/{{y.id}}" ng-bind="y.label"></a></li>
