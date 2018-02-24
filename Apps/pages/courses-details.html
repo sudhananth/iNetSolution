@@ -34,17 +34,20 @@
                                         <div class="course-details-inner">
                                             <h2 class="title-default-left title-bar-high" ng-bind="data.mdata.heading"></h2>
                                             <p ng-bind="data.mdata.content"></p>
-                                            <h3 class="sidebar-title">Course Features</h3>
-                                            <ul class="course-feature">
-                                                <li>Start: <span ng-bind="data.fdata.start"></span></li>
-                                                <li>Course Duration: <span ng-bind="data.fdata.courseDuration"></span></li>
-                                                <li>Total Credits: <span ng-bind="data.fdata.totalCredits"></span></li>
-                                                <li>Seats Available: <span ng-bind="data.fdata.seatsAvailable"></span></li>
-                                                <li>Total Classes : <span ng-bind="data.fdata.totalClasses"></span></li>
-                                                <li>Time: <span ng-bind="data.fdata.time"></span></li>
-                                                <li>Class: <span ng-bind="data.fdata.class"></span></li>
-                                                <li>Lecturer: <span ng-bind="data.fdata.lecturer"></span></li>
-                                            </ul>
+                                            <div style="display:none;">
+                                                <h3 class="sidebar-title">Course Features</h3>
+                                                <ul class="course-feature">
+                                                    <li>Start: <span ng-bind="data.fdata.start"></span></li>
+                                                    <li>Course Duration: <span ng-bind="data.fdata.courseDuration"></span></li>
+                                                    ti
+                                                    <li>Total Credits: <span ng-bind="data.fdata.totalCredits"></span></li>
+                                                    <li>Seats Available: <span ng-bind="data.fdata.seatsAvailable"></span></li>
+                                                    <li>Total Classes : <span ng-bind="data.fdata.totalClasses"></span></li>
+                                                    <li>Time: <span ng-bind="data.fdata.time"></span></li>
+                                                    <li>Class: <span ng-bind="data.fdata.class"></span></li>
+                                                    <li>Lecturer: <span ng-bind="data.fdata.lecturer"></span></li>
+                                                </ul>
+                                            </div>
                                             <div>
                                                 <!--<div class="text-center">
                                                     <input type="button" ng-click="showToggle = !showToggle" name="name" class="showmorebtn" value="{{showToggle ? 'Less Content...':'More Content...'}}" />
