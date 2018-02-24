@@ -70,7 +70,7 @@ inet.controller('coursesController', function ($scope, $route, $rootScope) {
     $scope.$on('$viewContentLoaded', function () { loadScript(); });
 });
 inet.controller('coursesdetailsController', function ($scope, $route, $rootScope) {
-    var id = $route.current.params.id;    
+    var id = $route.current.params.id;
     var subid = $route.current.params.subid;
     $scope.pcourseid = id;
     var feature = $rootScope.datas.features;
@@ -130,7 +130,7 @@ inet.directive('course', function () {
     };
 });
 inet.directive('accordin', function () {
-    var controller = ['$scope', function ($scope) {
+    var controller = ['$scope', function ($scope,$window) {
         $scope.togglevalue = 0;
         $scope.toggledvalue = 0;
         function init() {
@@ -143,6 +143,9 @@ inet.directive('accordin', function () {
                 $scope.toggledvalue = val;
                 $(".checked").removeClass('checked');
                 $(checked.currentTarget).addClass("checked");
+
+                
+
             }
             else {
                 $scope.togglevalue = 0;
