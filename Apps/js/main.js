@@ -53,7 +53,7 @@ $(document).ready(function () {
     /*===================================
         Nice Scroller Function
      ======================================*/
-    $("html").niceScroll();
+    //$("html").niceScroll();
     /*===================================
      Login and Register Forum Popup Flips
      ======================================*/
@@ -70,6 +70,12 @@ $(document).ready(function () {
         $("#Login").css('display', 'block');
         $("#card").toggleClass('flipped');
         $("#Register").css('display', 'none');
+    });
+
+    $(document).off("click", ".course_scroll").on("click", ".course_scroll", function () {        
+        $('html, body').animate({
+            scrollTop: ($(this).offset().top - 100)
+        }, 1000);
     });
 
     /*===================================
@@ -173,6 +179,6 @@ $(document).ready(function () {
 
 $(document).off("click", "input[type='checkbox']").on("click", "input[type='checkbox']", function () {
     $("input[type='checkbox']").prop('checked', false);
-    $(this).prop('checked', true);  
+    $(this).prop('checked', true);
 
 });
